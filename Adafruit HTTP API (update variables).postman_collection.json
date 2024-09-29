@@ -1,0 +1,705 @@
+{
+	"info": {
+		"_postman_id": "70c959fe-9e0c-4fda-abe2-24eccf5bf7c6",
+		"name": "Adafruit HTTP API (update variables)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32519646",
+		"_collection_link": "https://adafruit-io-tyeth.postman.co/workspace/2d551378-17b3-4424-8fb3-62b5f6d26fc2/collection/32519646-70c959fe-9e0c-4fda-abe2-24eccf5bf7c6?action=share&source=collection_link&creator=32519646"
+	},
+	"item": [
+		{
+			"name": "get time service",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/integrations/time",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"integrations",
+						"time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get detailed user info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/user",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get throttle info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/throttle",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"throttle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Actions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/actions",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"actions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Dashboards",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/dashboards",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"dashboards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get feed data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed_name}}/data",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"feeds",
+						"{{feed_name}}",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get feeds list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"feeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get groups",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/groups",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"enviro 🛜 {{$isoTimestamp}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/groups/",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"groups",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "enviro2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add feeds to group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"feed\": {\"name\": \"hum\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/groups/{{group_name}}/feeds",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"groups",
+						"{{group_name}}",
+						"feeds"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data multiple points (group)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"feeds\": [\r\n        {\r\n            \"key\": \"{{feed_name}}\",\r\n            \"value\": 0\r\n        },\r\n        {\r\n            \"key\": \"voc\",\r\n            \"value\": 100,\r\n            \"created_at\": \"{{$isoTimestamp}}\"\r\n        }\r\n    ],\r\n    \"location\": {\r\n        \"lat\": 52,\r\n        \"lon\": -2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/groups/{{group_name}}/data",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"groups",
+						"{{group_name}}",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "data multiple points (feed batch)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"feeds\": [\r\n        {\r\n            \"key\": \"{{feed_name}}\",\r\n            \"value\": 0\r\n        },\r\n        {\r\n            \"key\": \"voc\",\r\n            \"value\": 100,\r\n            \"created_at\": \"{{$isoTimestamp}}\"\r\n        }\r\n    ],\r\n    \"location\": {\r\n        \"lat\": 52,\r\n        \"lon\": -2\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/groups/{{group_name}}/data",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"groups",
+						"{{group_name}}",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat-long post FLOATS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value\": {{$randomInt}},\r\n    \"lat\": 52.0,\r\n    \"lon\": -2.11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed_name}}/data",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"feeds",
+						"{{feed_name}}",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "lat-long post STRING-RAND",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value\": {{$randomInt}},\r\n    \"lat\": \"52.{{$randomInt}}\",\r\n    \"lon\": \"-2.{{randomInt}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed_name}}/data",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"feeds",
+						"{{feed_name}}",
+						"data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch feed",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/{{feed_name}}",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"feeds",
+						"{{feed_name}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put period update sen54 c (staging)",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-AIO-Key",
+						"value": "{{io_key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"feed\":{\"name\":\"SEN54: Temperature Sensor (°C)\",\"wipper_pin_info\":{\"found\":true,\"isI2C\":true,\"type\":\"sen54:ambient-temp\",\"period\":5,\"i2cAddress\":105,\"sensorType\":\"ambient-temp\"}}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/feather-esp32-v248050.ws-0x69-ambient-temp",
+					"protocol": "https",
+					"host": [
+						"io",
+						"adafruit",
+						"us"
+					],
+					"path": [
+						"api",
+						"v2",
+						"{{io_user}}",
+						"feeds",
+						"feather-esp32-v248050.ws-0x69-ambient-temp"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "feed_name",
+			"value": "ppm10",
+			"type": "string"
+		},
+		{
+			"key": "io_user",
+			"value": "playground_example",
+			"type": "string"
+		},
+		{
+			"key": "group_name",
+			"value": "test-group-name"
+		},
+		{
+			"key": "io_key",
+			"value": "aio_iCCH42Y0LhigTmFwiRH97AMsJdGs"
+		}
+	]
+}
