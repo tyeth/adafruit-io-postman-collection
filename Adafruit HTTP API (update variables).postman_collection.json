@@ -623,7 +623,7 @@
 			"response": []
 		},
 		{
-			"name": "put period update sen54 c (staging)",
+			"name": "put period update sen54 c",
 			"request": {
 				"method": "PUT",
 				"header": [
@@ -643,7 +643,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://io.adafruit.us/api/v2/{{io_user}}/feeds/feather-esp32-v248050.ws-0x69-ambient-temp",
+					"raw": "https://io.adafruit.com/api/v2/{{io_user}}/feeds/feather-esp32-v248050.ws-0x69-ambient-temp",
 					"protocol": "https",
 					"host": [
 						"io",
